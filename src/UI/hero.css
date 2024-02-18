@@ -1,0 +1,40 @@
+#scroller{
+    white-space:nowrap;
+
+}
+#scroller h4{
+    display: inline-block;
+    white-space:nowrap;
+    font-size: 140px;
+    font-weight: 900;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 10px;
+    color:gainsboro;
+    transition:all linear 1s;
+    -webkit-text-stroke:2px #95C11E;
+    text-shadow: 2px 2px 2px #000000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+    filter: blur(10px);
+    
+
+
+}
+
+
+.hero{
+    background-color: rgba(200, 232, 232, 0.411);
+    white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 50%; /* Make the bottom left slightly rounded */
+  border-bottom-right-radius: 40%; /* Make the bottom right slightly rounded */
+}
