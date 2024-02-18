@@ -1,5 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 export default  function Footer(){
   const [isPopupVisible, setIsPopupVisible] = useState(false);
   const[firstname,setfirstname]=useState('')
@@ -7,9 +8,25 @@ export default  function Footer(){
   const[phone,setphone]=useState('')
   const[message,setmessage]=useState('')
   const handleSubmit = (event) => {
-    setIsPopupVisible(true);
-    event.preventDefault();
    
+    event.preventDefault();
+    const headers = {
+      "Content-Type": "application/json",}
+      axios.post('https://gmailapi-x205.onrender.com/api/sendemail', {
+      name: firstname,
+      email: email,
+      
+    }, { headers })
+    .then(() => {
+    
+      console.log("Success"); // Logging success message
+     
+    })
+    .catch(err => {
+      console.error(err); // Logging error for debugging
+    });
+   
+    setIsPopupVisible(true);
 
   };
   useEffect(() => {
