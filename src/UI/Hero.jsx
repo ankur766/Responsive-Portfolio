@@ -161,7 +161,7 @@ export default function Hero() {
                 <i class="ri-close-fill cursor-pointer text-red-500 font-[400] text-2xl" onClick={() => setIsContactOpen(false)}></i>
                 <Contact></Contact>
               </motion.div>}
-              <a href=" https://drive.google.com/file/d/132yQZIspxXrt-RftGuVOA_X6UiMo7iF4/view" target='_blank' rel=''>
+              <a href=" https://drive.google.com/file/d/19mizWNtuEtRQ0SjToOMJSHwnO6Af6TOz/view?usp=sharing" target='_blank' rel=''>
                 <button className='flex  whitespace-nowrap  text-smallTextColor font-[600] border  border-solid border-smallTextColor  items-center gap-2 py-2 px-4 rounded-[8px] max-h-[40px] hover:bg-smallTextColor hover:text-white hover:font-[500] ease-in duration-300'>
                   <i className="ri-download-2-line "></i>
                   Download CV
